@@ -11,6 +11,13 @@ alias mix="docker-compose run --rm phoenix mix"
 alias iex="docker-compose run --rm phoenix iex"
 ```
 
+To create an app run:
+
+
+```
+mix phx.new . --app hello
+```
+
 To start your Phoenix server:
 
 - Install dependencies with mix deps.get
