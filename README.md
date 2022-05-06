@@ -25,6 +25,18 @@ Then run this to create your app replacing "hello" with your apps name:
 mix phx.new . --app hello
 ```
 
+Change the database hostname configuration on file src/config/dev.exs to point to the db container.
+
+Configure your database
+
+```
+hostname: "db",
+```
+
+**DAN! RUN docker-compose up IN YOUR DEV ENVIRONMENT! DONT GO MAD!**
+
+Run `docker-compose up` instead of straight `mix​​ ​​phx.server​`!
+
 To start your Phoenix server:
 
 - Install dependencies with mix deps.get
