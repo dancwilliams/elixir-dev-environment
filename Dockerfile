@@ -1,4 +1,4 @@
-FROM elixir:1.13.1-alpine
+FROM elixir:1.13.4-alpine
 
 RUN apk update && \
     apk add --upgrade --no-cache alpine-sdk && \

@@ -10,8 +10,7 @@ services:
     depends_on:
       - db
   db:
-#    platform: linux/arm/v8
-    image: "postgres:14.1-alpine"
+    image: "postgres:14.2-alpine"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: "postgres"
