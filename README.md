@@ -11,8 +11,15 @@ alias mix="docker-compose run --rm phoenix mix"
 alias iex="docker-compose run --rm phoenix iex"
 ```
 
-To create an app run:
+To create an app:
 
+make sure to create the src directory:
+
+```
+mkdir src
+```
+
+Then run this to create your app replacing "hello" with your apps name:
 
 ```
 mix phx.new . --app hello
