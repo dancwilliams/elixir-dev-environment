@@ -25,12 +25,18 @@ Then run this to create your app replacing "hello" with your apps name:
 mix phx.new . --app hello
 ```
 
-Change the database hostname configuration on file src/config/dev.exs to point to the db container.
+Change the database hostname configuration on file src/config/dev.exs to point to the db container.   Also update the IP addess.
 
 Configure your database
 
 ```
 hostname: "db",
+```
+
+Change the IP:
+
+```
+http: [ip: {0, 0, 0, 0}, port: 4000],
 ```
 
 **DAN! RUN docker-compose up IN YOUR DEV ENVIRONMENT! DONT GO MAD!**
