@@ -41,6 +41,16 @@ http: [ip: {0, 0, 0, 0}, port: 4000],
 
 **DAN! RUN docker-compose up IN YOUR DEV ENVIRONMENT! DONT GO MAD!**
 
+### Attach iex session
+
+docker ps
+# Find container-id to attach to.
+
+docker exec -it <container-id> sh bin/debug
+
+# in iex shell
+iex(debug@<hostname>)1> Node.connect(:"app@<hostname>")
+
 Run `docker-compose up` instead of straight `mix​​ ​​phx.server​`!
 
 To start your Phoenix server:
