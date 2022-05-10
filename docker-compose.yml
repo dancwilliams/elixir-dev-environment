@@ -7,6 +7,7 @@ services:
       - ./src:/app
     ports:
       - "4000:4000"
+    command: sleep infinity
     depends_on:
       - db
   db:
